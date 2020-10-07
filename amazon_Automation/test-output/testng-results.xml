@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-07T13:42:46 IST" name="Default suite" finished-at="2020-10-07T13:43:43 IST" duration-ms="57710">
+    <groups>
+    </groups>
+    <test started-at="2020-10-07T13:42:46 IST" name="Default test" finished-at="2020-10-07T13:43:43 IST" duration-ms="57710">
+      <class name="amazon_Automation.AmazonAutomationTest">
+        <test-method is-config="true" signature="run_chrome()[pri:0, instance:amazon_Automation.AmazonAutomationTest@22635ba0]" started-at="2020-10-07T13:42:46 IST" name="run_chrome" finished-at="2020-10-07T13:43:13 IST" duration-ms="26859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run_chrome -->
+        <test-method signature="amazonTest()[pri:0, instance:amazon_Automation.AmazonAutomationTest@22635ba0]" started-at="2020-10-07T13:43:13 IST" name="amazonTest" finished-at="2020-10-07T13:43:39 IST" duration-ms="26031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonTest -->
+        <test-method is-config="true" signature="close_driver()[pri:0, instance:amazon_Automation.AmazonAutomationTest@22635ba0]" started-at="2020-10-07T13:43:39 IST" name="close_driver" finished-at="2020-10-07T13:43:43 IST" duration-ms="4602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close_driver -->
+      </class> <!-- amazon_Automation.AmazonAutomationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
