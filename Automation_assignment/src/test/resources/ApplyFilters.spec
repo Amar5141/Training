@@ -1,0 +1,5 @@
+quick_filters   xpath   //a[text()='Cases with Video']
+content_type   xpath   //span[text()='Content Type']
+Article   xpath   //a[text()='Article']
+Page_Length   xpath   //span[text()='Page Length']
+11-15   xpath   //a[text()='11-15']

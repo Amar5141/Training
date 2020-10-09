@@ -1,0 +1,5 @@
+username   xpath   //span[text()='test']
+item   xpath   //span[@class='refinement-tag__dimension-label']
+cases_with_video   xpath   //span[text()='Cases with Video']
+Article   xpath   //span[@class='refinement-tag__dimension-label' and text()='Article']
+11-15   xpath   //span[@class='refinement-tag__dimension-label' and text()='11-15']
