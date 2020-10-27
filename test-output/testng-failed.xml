@@ -5,8 +5,7 @@
     <classes>
       <class name="TwitterAPITest">
         <methods>
-          <include name="SetUp"/>
-          <include name="PostTweet"/>
+          <include name="postTweet"/>
         </methods>
       </class> <!-- TwitterAPITest -->
     </classes>
