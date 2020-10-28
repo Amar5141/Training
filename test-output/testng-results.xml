@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-27T12:45:41 IST" name="Default suite" finished-at="2020-10-27T12:46:01 IST" duration-ms="20077">
+  <suite started-at="2020-10-28T18:00:25 IST" name="Default suite" finished-at="2020-10-28T18:00:45 IST" duration-ms="19725">
     <groups>
     </groups>
-    <test started-at="2020-10-27T12:45:41 IST" name="Default test" finished-at="2020-10-27T12:46:01 IST" duration-ms="20077">
-      <class name="TwitterAPITest">
-        <test-method signature="postTweet()[pri:0, instance:TwitterAPITest@11a9e7c8]" started-at="2020-10-27T12:45:42 IST" name="postTweet" finished-at="2020-10-27T12:46:01 IST" duration-ms="19788" status="PASS">
+    <test started-at="2020-10-28T18:00:25 IST" name="Default test" finished-at="2020-10-28T18:00:45 IST" duration-ms="19725">
+      <class name="PostAPI.PostTweet">
+        <test-method signature="postTweet()[pri:0, instance:PostAPI.PostTweet@147ed70f]" started-at="2020-10-28T18:00:25 IST" name="postTweet" finished-at="2020-10-28T18:00:45 IST" duration-ms="19506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postTweet -->
-      </class> <!-- TwitterAPITest -->
+      </class> <!-- PostAPI.PostTweet -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

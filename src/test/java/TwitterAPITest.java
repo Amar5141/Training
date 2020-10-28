@@ -12,7 +12,7 @@ public class TwitterAPITest {
 		String accessKey = "1318140576240316416-CcvS9MvrnllMFEZKh1ReQw333wtWaT";
 		String accessToken = "cvlcdWeBJiQuV1fhsnFSauhs9z3qR8n55lcxYgimeBfF4";
 
-		String Tweet = "Tweet via RestAssured API 2";
+		String Tweet = "Test Tweet via RestAssured";
 		String URI = "https://api.twitter.com/1.1/statuses/update.json?status="+Tweet;
 
 		Response response = RestAssured.given()
