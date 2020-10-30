@@ -17,12 +17,12 @@ public class TweetsLookUp extends FetchKeys {
 				.auth()
 				.oauth(super.consumerKey, super.consumerSecret, super.accessToken, super.tokenSecret)
 				.get("https://api.twitter.com/1.1/statuses/lookup.json?id=1320991823091822593,1320985462975066132");
-		
+
 		JsonPath json = response.jsonPath();
 
-		System.out.println(json.get("text"));
-		
-	/*	[response.getBody().jsonPath().prettify()] */
+		System.out.println(json.get("text").toString());
+
+		/*	[response.getBody().jsonPath().prettify()]  */
 
 	}
 }

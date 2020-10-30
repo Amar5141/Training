@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="GetAPI.TweetByID">
+      <class name="PostAPI.LikeTweet">
         <methods>
-          <include name="getTweetByID"/>
+          <include name="likeTweet"/>
         </methods>
-      </class> <!-- GetAPI.TweetByID -->
+      </class> <!-- PostAPI.LikeTweet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

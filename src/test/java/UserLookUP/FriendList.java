@@ -9,12 +9,13 @@ import io.restassured.response.Response;
 public class FriendList extends FetchKeys {
 
 	@Test
-	public void fetch_Friend_List() {
+	public void fetch_Friend_List() throws Exception {
 
+		super.fetchKeys();
 		Response response = RestAssured.given()
 				.auth()
 				.oauth(super.consumerKey, super.consumerSecret, super.accessToken, super.tokenSecret)
-				.get("https://api.twitter.com/1.1/friends/list.json?screen_name=imVkohli");
+				.get("https://api.twitter.com/1.1/friends/list.json?screen_name=AryanKansal2");
 
 		System.out.println(response.getBody().jsonPath().prettify());
 	}

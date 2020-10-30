@@ -15,5 +15,6 @@ public class FetchKeys {
 		this.accessToken    = readFile.getProperties("accessToken");
 		this.tokenSecret    = readFile.getProperties("tokenSecret");
 	}	
+	
 }
 

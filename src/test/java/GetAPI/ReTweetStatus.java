@@ -1,5 +1,6 @@
 package GetAPI;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ReadFileData.FetchKeys;
 import io.restassured.RestAssured;
@@ -18,7 +19,10 @@ public class ReTweetStatus extends FetchKeys {
 				.get("https://api.twitter.com/1.1/statuses/retweets_of_me.json?count=2");
 
 		JsonPath json = response.jsonPath();
-		System.out.println(json.get("text"));
+		String actual = json.get("text");
+		String expected = "reTweet";
+		Assert.assertEquals(actual, expected, "ReTweet Failed ...");
+		System.out.println("Successfully reTweeted ");
 		
 		/* [response.getBody().jsonPath().prettify()] */
 

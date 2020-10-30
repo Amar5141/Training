@@ -1,5 +1,6 @@
 package GetAPI;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import ReadFileData.FetchKeys;
 import io.restassured.RestAssured;
@@ -18,6 +19,9 @@ public class TweetByID extends FetchKeys {
 				.get("https://api.twitter.com/1.1/statuses/show.json?id=1320991823091822593");
 
 		JsonPath json = response.jsonPath();
-		System.out.println(json.get("text"));
+		String actual = json.get("text");
+		String expected = null;
+		Assert.assertEquals(actual, expected, "Tweet not found...");
+		System.out.println("Found the Tweet " + json.get("text"));
 	}
 }

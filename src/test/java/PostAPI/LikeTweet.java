@@ -1,5 +1,6 @@
 package PostAPI;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import ReadFileData.FetchKeys;
@@ -12,16 +13,21 @@ public class LikeTweet extends FetchKeys {
 	@Test
 	public void likeTweet() throws Exception {
 		
-		String tweetID = "1320975676405469184";
+		PostTweet tweet = new PostTweet();
+		tweet.postTweet();
+		String tweetID = tweet.ID;
 		
 		super.fetchKeys();
 		Response response = RestAssured.given()
 				.auth()
 				.oauth(super.consumerKey, super.consumerSecret, super.accessToken, super.tokenSecret)
-				.post("https://api.twitter.com/1.1/favorites/create.json?id="+tweetID);
+				.post("https://api.twitter.com/1.1/favorites/create.json?id=" + tweetID);
 		
 		JsonPath json = response.jsonPath();
-		System.out.println("Liked the Tweet : " + json.get("text"));
+		String actual = json.get("text").toString();
+		String expected = "Testing Twitter Tweet API 6 ...";
+		Assert.assertEquals(actual, expected, "API Failed ...");
+		System.out.println("Liked the tweet : " + json.get("text") );
 		
 		/* [response.getStatusCode()] */
 	}
